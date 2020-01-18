@@ -1,0 +1,15 @@
+body {
+    Text-align: center;
+    background-image: url(Images/3.jpg);
+
+}
+h1 {
+    color: yellow;
+    font-size: 100px;
+    font-family: serif;
+}
+h2 {
+    color: blue;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
