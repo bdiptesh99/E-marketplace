@@ -6,6 +6,15 @@ const app = express();
 
 app.use(bodyParser.json());
 
+const MONGODB_URI = "mongodb://localhost/shopping";
+
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
+    })
+    .then(() => console.log('Mongoose is connected'))
+    .catch(err => console.log('Error :' + err))
+;
 
 const port = process.env.PORT || 5000;
 
