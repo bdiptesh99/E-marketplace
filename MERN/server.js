@@ -6,6 +6,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
+// run mongod in terminal before connecting to mongodb locally
 const MONGODB_URI = "mongodb://localhost/shopping";
 
 mongoose.connect(MONGODB_URI, {
